@@ -1,0 +1,2 @@
+https://github.com/blocklistproject/Lists/blob/master/fraud.txt
+https://github.com/blocklistproject/Lists/blob/master/gambling.txt
