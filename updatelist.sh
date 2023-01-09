@@ -1,9 +1,10 @@
 #!/bin/bash
-filename='updatelist.txt'
+filename='list.txt'
 n=1
 while read line; do
 # reading each line
-    echo "Line No. $n : $line"
+    echo "$n adding: $line"
+    sudo sqlite3 etc-pihole/gravity.db "INSERT INTO adlist (address, enabled, comment) VALUES ('$line', 1, 'test list cli add');"
     n=$((n+1))
 done < $filename
 
