@@ -1,3 +1,4 @@
 docker compose up -d
 
-#docker exec [container id] pihole -g
+
+docker exec $(docker ps -aqf "name=^pihole$") pihole -g
