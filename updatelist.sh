@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "update database"
+echo "Update database"
 
 filename='list.txt'
 n=1
@@ -11,5 +11,5 @@ while read line; do
     n=$((n+1))
 done < $filename
 
-echo "restart graviton"
+echo "Restart graviton"
 docker exec $(docker ps -aqf "name=^pihole$") pihole -g
